@@ -1,0 +1,63 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(236, 227, 227);
+}
+
+h1{
+    color: rgb(38, 178, 221);
+}
+
+table, th, td {
+    border: 0.5px solid black;
+    border-collapse: collapse;
+    text-align: center;
+    padding: 10px;
+    margin: 5px;
+}
+
+input[type = "text"]{
+    padding: 5px;
+    margin: 5px;
+}
+
+input[type = "password"]{
+    padding: 5px;
+    margin: 5px;
+}
+
+button[type = "submit"]{
+    border: none;
+    margin: 5px;
+    padding: 5px;
+    background-color: rgb(171, 226, 235);
+    transition: 500ms;
+    border-radius: 4px;
+}
+
+button[name="button-add"]:hover{
+    background-color: rgb(131, 209, 58);
+}
+
+button[name="button-delete"]:hover{
+    background-color: rgb(218, 90, 67);
+}
+
+button[name="button-clear"]:hover{
+    background-color: rgb(241, 48, 14);
+}
+
+button[name="button-logout"]:hover{
+    background-color: rgb(199, 230, 235);
+}
+
+button[name="button-login"]:hover{
+    background-color: rgb(199, 230, 235);
+}
+
+button[name="button-register"]:hover{
+    background-color: rgb(199, 230, 235);
+}

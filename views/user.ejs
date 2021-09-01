@@ -1,0 +1,27 @@
+<%- include('partials/header') %>
+
+
+<h1><%= kind %></h1>
+<table>
+    <tr>
+        <th>NAME</th>
+        <th>AGE</th>
+    </tr>
+    <% for(var i=0;i < items.length;i++){ %>
+        <tr>
+            <td><%= items[i].Name %></td>
+            <td><%= items[i].Age %></td>
+        </tr>
+    <% } %>
+</table>
+
+<form action="/user" method="post">
+    <input type="text" name="newName" placeholder="Name">
+    <input type="number" name="newAge" placeholder="Age">
+    <button type="submit" name="button-add">Add</button>
+    <button type="submit" name="button-delete">Delete</button>
+    <button type="submit" name="button-clear">Clear All</button>
+    <button type="submit" name="button-logout">Logout</button>
+</form>
+
+<%- include('partials/footer') %>
